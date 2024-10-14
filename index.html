@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png">
+    <title>APlayer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/OneLevelStudio/CORE/core.css">
+    <link rel="stylesheet" href="style-core.css">
+</head>
+
+<body>
+
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" rel="stylesheet">
+        <div id="aplayer"></div>
+        <script>
+            const ap = new APlayer({
+                container: document.getElementById('aplayer'),
+                mini: false,
+                autoplay: false,
+                theme: '#FADFA3',
+                loop: 'all',
+                order: 'random',
+                preload: 'auto',
+                volume: 0.7,
+                mutex: true,
+                listFolded: false,
+                listMaxHeight: 90,
+                audio: [
+                    {
+                        name: 'Last Friday Night 1',
+                        artist: 'Katy Perry 1',
+                        url: 'audio/Katy Perry - Last Friday Night.mp3',
+                        cover: 'cover1.jpg',
+                        theme: '#ebd0c2'
+                    },
+                    {
+                        name: 'Last Friday Night 2',
+                        artist: 'Katy Perry 2',
+                        url: 'audio/Katy Perry - Last Friday Night.mp3',
+                        cover: 'cover2.jpg',
+                        theme: '#46718b'
+                    }
+                ]
+            });
+        </script>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/OneLevelStudio/CORE/core.js"></script>
+</body>
+
+</html>
